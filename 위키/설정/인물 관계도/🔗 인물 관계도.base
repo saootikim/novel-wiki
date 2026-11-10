@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.hasTag("인물 관계도")
+    - file.name != "INDEX"
+views:
+  - type: table
+    name: 전체
+    order:
+      - file.name
+      - "note.관계유형"
+      - "note.중요도"
+      - "note.현재상태"
+      - "note.독자공개"
+      - "note.인물"

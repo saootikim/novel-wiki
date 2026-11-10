@@ -1,0 +1,12 @@
+filters:
+  and:
+    - file.hasTag("설정·용어 사전")
+    - file.name != "INDEX"
+views:
+  - type: table
+    name: 전체
+    order:
+      - file.name
+      - "note.분류"
+      - "note.확정여부"
+      - "note.확정 여부"

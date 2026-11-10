@@ -1,0 +1,11 @@
+# Obsidian: per-machine state stays local; app.json travels
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+
+# 사이트·저장소에 올리지 않는 것: 클로드 설정, 재판 기록 원본, 그래프 캐시
+.claude/
+.court/
+graphify-out/
+skills-lock.json

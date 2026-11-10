@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.hasTag("세력·길드")
+    - file.name != "INDEX"
+views:
+  - type: table
+    name: 전체
+    order:
+      - file.name
+      - "note.분류"
+      - "note.규모"
+      - "note.주인공과의관계"
+      - "note.설정확정도"
+      - "note.소속캐릭터"

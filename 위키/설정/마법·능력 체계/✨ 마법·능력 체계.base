@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.hasTag("마법·능력 체계")
+    - file.name != "INDEX"
+views:
+  - type: table
+    name: 전체
+    order:
+      - file.name
+      - "note.분류"
+      - "note.계통"
+      - "note.등급"
+      - "note.설정확정도"
+      - "note.보유캐릭터"

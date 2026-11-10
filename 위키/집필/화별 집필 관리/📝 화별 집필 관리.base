@@ -1,0 +1,21 @@
+filters:
+  and:
+    - file.hasTag("화별 집필 관리")
+    - file.name != "INDEX"
+views:
+  - type: table
+    name: 전체
+    order:
+      - file.name
+      - "note.화 번호"
+      - "note.상태"
+      - "note.로컬 원고"
+      - "note.편·아크"
+      - "note.글자 수"
+      - "note.이 화 요약"
+      - "note.끝맺음·훅"
+      - "note.설정 반영 완료"
+      - "note.마감일"
+    sort:
+      - property: "note.화 번호"
+        direction: ASC

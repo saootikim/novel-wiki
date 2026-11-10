@@ -1,0 +1,25 @@
+filters:
+  and:
+    - file.hasTag("캐릭터")
+    - file.name != "INDEX"
+views:
+  - type: table
+    name: 전체
+    order:
+      - file.name
+      - "note.소속"
+      - "note.비중"
+      - "note.직업"
+      - "note.직급"
+      - "note.등급"
+      - "note.세계관등급"
+      - "note.생존"
+      - "note.보유능력"
+      - "note.설정확정도"
+      - "note.힘"
+      - "note.속도"
+      - "note.맷집"
+      - "note.지능"
+      - "note.종합"
+      - "note.실질전투력"
+      - "note.잠재력"

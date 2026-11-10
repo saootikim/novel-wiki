@@ -1,0 +1,16 @@
+filters:
+  and:
+    - file.hasTag("사건 연표")
+    - file.name != "INDEX"
+views:
+  - type: table
+    name: 전체
+    order:
+      - file.name
+      - "note.시점구분"
+      - "note.시점 구분"
+      - "note.공개화"
+      - "note.독자공개"
+      - "note.독자에게 공개됨?"
+      - "note.관련인물"
+      - "note.관련세력"

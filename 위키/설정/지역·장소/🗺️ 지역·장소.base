@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.hasTag("지역·장소")
+    - file.name != "INDEX"
+views:
+  - type: table
+    name: 전체
+    order:
+      - file.name
+      - "note.분류"
+      - "note.위험도"
+      - "note.설정확정도"
+      - "note.주요인물"
+      - "note.연고캐릭터"

@@ -1,0 +1,11 @@
+filters:
+  and:
+    - file.hasTag("몬스터·적")
+    - file.name != "INDEX"
+views:
+  - type: table
+    name: 전체
+    order:
+      - file.name
+      - "note.분류"
+      - "note.등급"
